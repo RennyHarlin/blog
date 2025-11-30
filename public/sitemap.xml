@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://localhost:54676/tags/ai/</loc>
+  </url><url>
+    <loc>http://localhost:54676/categories/artificial-intelligence/</loc>
+  </url><url>
+    <loc>http://localhost:54676/tags/blog/</loc>
+  </url><url>
+    <loc>http://localhost:54676/categories/</loc>
+  </url><url>
+    <loc>http://localhost:54676/posts/hello/</loc>
+  </url><url>
+    <loc>http://localhost:54676/posts/</loc>
+  </url><url>
+    <loc>http://localhost:54676/</loc>
+  </url><url>
+    <loc>http://localhost:54676/tags/</loc>
+  </url>
+</urlset>
