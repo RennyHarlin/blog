@@ -49,7 +49,7 @@ params:
 
   label:
     text: "Renny Harlin"
-    icon: /apple-touch-icon.png
+    icon: 
     iconHeight: 35
 
   # profile-mode
@@ -73,8 +73,8 @@ params:
     Content: Welcome to my blog. I write about Artificial Intelligence, Computer Science, and Robotics.
 
   socialIcons:
-    - name: x
-      url: "https://x.com/"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/renny-harlin-16a823297"
     - name: github
       url: "https://github.com/RennyHarlin"
 

@@ -14,11 +14,11 @@
     <lastBuildDate>Mon, 01 Dec 2025 06:41:43 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Make your own site like me using Hugo</title>
+      <title>Make your own site like me using Hugo with PaperMod theme</title>
       <link>http://localhost:1313/posts/hugo/</link>
       <pubDate>Mon, 01 Dec 2025 06:41:43 +0530</pubDate>
       <guid>http://localhost:1313/posts/hugo/</guid>
-      <description>&lt;p&gt;This blog will help you build your own blog site using Hugo and deploy it in github pages for $0&lt;/p&gt;
+      <description>&lt;p&gt;This blog will help you build your own blog site using Hugo with PaperMod theme and deploy it in github pages for $0&lt;/p&gt;
 &lt;h2 id=&#34;1-what-is-hugo-&#34;&gt;1. What is Hugo ?&lt;/h2&gt;
 &lt;p&gt;Hugo is a fast static site generator. It converts Markdown files into a full HTML, CSS, and Javascript site using a theme.&lt;/p&gt;
 &lt;h3 id=&#34;advantages&#34;&gt;Advantages:&lt;/h3&gt;

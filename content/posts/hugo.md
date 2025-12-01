@@ -1,11 +1,11 @@
 ---
 date: '2025-12-01T06:41:43+05:30'
 draft: false
-title: 'Make your own site like me using Hugo'
+title: 'Make your own site like me using Hugo with PaperMod theme'
 categories: ['hugo']
 ---
 
-This blog will help you build your own blog site using Hugo and deploy it in github pages for $0
+This blog will help you build your own blog site using Hugo with PaperMod theme and deploy it in github pages for $0
 
 ## 1. What is Hugo ?
 
@@ -86,6 +86,17 @@ Suppose you want to group posts under categories, that is also possible with Pap
 PaperMod also allows you to add tags to your posts by adding `tags: ['tag-1', 'tag-2']` to the front matter of the post.
 
 All tags and categories are available in the navbar in PaperMod.
+
+## 9. Deployment
+
+- After completing your post, commit your changes and push it to the Github repository with the repository name `<github-username>.github.io`
+- In Github, go to pages and configure source as Github Actions
+- Go to browse all workflows and select Hugo
+- Github will give a workflow.yml file
+- Inorder for PaperMod to work, the selected Hugo version must be the latest one
+- Edit the workflow.yml file with the latest Hugo version number and commit changes
+- Hola! your site is live to the world.
+
 
 
 ### That's it. Thank you for reading.
