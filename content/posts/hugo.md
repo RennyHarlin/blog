@@ -2,7 +2,7 @@
 date: '2025-12-01T06:41:43+05:30'
 draft: false
 title: 'Make your own site like me using Hugo with PaperMod theme'
-categories: ['hugo']
+categories: ['Hugo']
 ---
 
 This blog will help you build your own blog site using Hugo with PaperMod theme and deploy it in github pages for $0
