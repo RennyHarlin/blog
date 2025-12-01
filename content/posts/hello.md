@@ -1,6 +1,6 @@
 ---
 title: "Hello welcome to my blog"
-draft: false
+draft: true
 summary: "This is my first blog"
 categories: ["Artificial Intelligence"]
 tags: ["AI", "Blog"]
