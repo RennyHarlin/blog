@@ -19,6 +19,7 @@ DES is a symmetric-key block cipher that follows the Fiestal Cipher structure.
 6. After round 16, Merge \(L_{16}\) (32 bits) and \(R_{16}\) (32 bits)
 7. Undo the initial permutation to get the cipher text
 
+
 ### Now, let's look at some of the non-intuitive steps in detail:
 
 **Initial Permutation** \
@@ -29,6 +30,10 @@ The heart of DES encryption lies in its Fiestal Function F, which takes two inpu
 
 - **Diffusion** (The influence of 1 input bit should be spread across multiple output bits)
 - **Confusion** (The relationship between input and output is hidden)
+
+![Fiestal function workflow](/imgs/des/substitution.png)
+
+The figure above illustrates the Fiestal function workflow.
 
 There are 4 steps involved in the Fiestal Function:
 
@@ -48,7 +53,6 @@ In the above table, the first and the last column contain the repeated bits of t
 
 3. Substitution (S-box) \
    The substitution provides **Confusion**. This is one of the crucial parts of the encryption process as this ensures that there is a complex relationship between the plain text and the cipher text. \
-   ![S-box workflow](/imgs/des/substitution.png)
    Steps involved: 
    - The 48-bit result from the XOR operation is divided into eight 6-bit chunks
    - Each chunk is processed by its own S-box (4x16 matrix), which takes 6 bits as input, and outputs 4 bits 
@@ -56,6 +60,7 @@ In the above table, the first and the last column contain the repeated bits of t
     - Using the row and column, choose the 4-bit entry from substitution lookup table 
     - For each of the 8 chunks, you get a 4-bit entry. Therefore, the overall output will be 32 bits long.
    ![s-box](/imgs/des/s-box.png)
+   The above table is an example of a substitution lookup table
 4. Permutation (P-box) \
    The final step applies a permutation to the 32-bit output from the S-boxes. This permutation rearranges the bits further contributing to diffusion by ensuring the current output of the S-box affects multiple S-boxes in next rounds.
 
