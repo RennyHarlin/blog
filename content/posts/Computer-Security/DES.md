@@ -42,7 +42,7 @@ This step is pretty straight forward.
 
 > E-box output (48 bit) XOR Sub-key (k<sub>i</sub>)= 48 bit Output
 
-3. Substition (S-box) \
+3. Substitution (S-box) \
 The substitution provides **Confusion**. This is one of the crucial parts of the encryption process as this ensures that there is a complex relationship between the plain text and the cipher text. \
 ![S-box workflow](/imgs/des/substitution.png)
 Steps involved:
