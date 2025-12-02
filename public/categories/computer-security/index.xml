@@ -2,36 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Computer Security on Renny Harlin</title>
-    <link>http://localhost:1313/categories/computer-security/</link>
+    <link>https://rennyharlin.github.io/categories/computer-security/</link>
     <description>Recent content in Computer Security on Renny Harlin</description>
     <image>
       <title>Renny Harlin</title>
-      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://rennyharlin.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://rennyharlin.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
     <lastBuildDate>Mon, 01 Dec 2025 18:23:22 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/computer-security/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://rennyharlin.github.io/categories/computer-security/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Computer Security: Data Encryption Standard (DES)</title>
-      <link>http://localhost:1313/posts/computer-security/des/</link>
+      <link>https://rennyharlin.github.io/posts/computer-security/des/</link>
       <pubDate>Mon, 01 Dec 2025 18:23:22 +0530</pubDate>
-      <guid>http://localhost:1313/posts/computer-security/des/</guid>
+      <guid>https://rennyharlin.github.io/posts/computer-security/des/</guid>
       <description>&lt;p&gt;DES is a symmetric-key block cipher that follows the Fiestal Cipher structure.&lt;/p&gt;
 &lt;h3 id=&#34;the-steps-involved-in-encryption-are&#34;&gt;The steps involved in encryption are:&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;Apply an initial permutation to the 64-bit input block using a permutation matrix&lt;/li&gt;
 &lt;li&gt;Similar to the Fiestal Cipher structure, split the 64 bit output after permutation into 2 halves \(L_0\) (32 bits) and \(R_0\) (32 bits)&lt;/li&gt;
-&lt;li&gt;Compute F(R&lt;!-- raw HTML omitted --&gt;0&lt;!-- raw HTML omitted --&gt;, k&lt;!-- raw HTML omitted --&gt;0&lt;!-- raw HTML omitted --&gt;) using expansion, XOR, S-boxes, and permutation&lt;/li&gt;
-&lt;li&gt;Set L&lt;!-- raw HTML omitted --&gt;1&lt;!-- raw HTML omitted --&gt; = R&lt;!-- raw HTML omitted --&gt;0&lt;!-- raw HTML omitted --&gt; and R&lt;!-- raw HTML omitted --&gt;1&lt;!-- raw HTML omitted --&gt; = \(L_0\) XOR F(\(R_0\), \(k_0\))&lt;/li&gt;
+&lt;li&gt;Compute F(\(R_0\), \(k_0\)) using expansion, XOR, S-boxes, and permutation&lt;/li&gt;
+&lt;li&gt;Set \(L_1\) = \(R_0\) and \(R_1\) = \(L_0\) XOR F(\(R_0\), \(k_0\))&lt;/li&gt;
 &lt;li&gt;Now, this concludes the first round. Now, do steps 3-4 15 more times&lt;/li&gt;
-&lt;li&gt;After round 16, Merge L&lt;!-- raw HTML omitted --&gt;16&lt;!-- raw HTML omitted --&gt; (32 bits) and R&lt;!-- raw HTML omitted --&gt;16&lt;!-- raw HTML omitted --&gt; (32 bits)&lt;/li&gt;
+&lt;li&gt;After round 16, Merge \(L*{16}\) (32 bits) and \(R*{16}\) (32 bits)&lt;/li&gt;
 &lt;li&gt;Undo the initial permutation to get the cipher text&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;now-lets-look-at-some-of-the-non-intuitive-steps-in-detail&#34;&gt;Now, let&amp;rsquo;s look at some of the non-intuitive steps in detail:&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Initial Permutation&lt;/strong&gt; &lt;br&gt;
-This step involves transposition of the 64-bit input block based on a IP matrix. The IP&lt;!-- raw HTML omitted --&gt;-1&lt;!-- raw HTML omitted --&gt; matrix is the reverse of the IP matrix which will be used in the last step will undo this transposition. This permutation plays no role in the cryptography aspect of the cipher. This step was introduced because of hardware considerations which were a major bottleneck during the 20th century.&lt;/p&gt;</description>
+This step involves transposition of the 64-bit input block based on a IP matrix. The \(IP^{-1}\) matrix is the reverse of the IP matrix which will be used in the last step will undo this transposition. This permutation plays no role in the cryptography aspect of the cipher. This step was introduced because of hardware considerations which were a major bottleneck during the 20th century.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
