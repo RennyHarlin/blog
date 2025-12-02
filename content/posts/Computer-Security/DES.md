@@ -16,7 +16,7 @@ DES is a symmetric-key block cipher that follows the Fiestal Cipher structure.
 3. Compute F(\(R_0\), \(k_0\)) using expansion, XOR, S-boxes, and permutation
 4. Set \(L_1\) = \(R_0\) and \(R_1\) = \(L_0\) XOR F(\(R_0\), \(k_0\))
 5. Now, this concludes the first round. Now, do steps 3-4 15 more times
-6. After round 16, Merge \(L*{16}\) (32 bits) and \(R*{16}\) (32 bits)
+6. After round 16, Merge \(L_{16}\) (32 bits) and \(R_{16}\) (32 bits)
 7. Undo the initial permutation to get the cipher text
 
 ### Now, let's look at some of the non-intuitive steps in detail:
