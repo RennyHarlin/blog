@@ -132,6 +132,22 @@ hadoop jar hadoop-streaming.jar \
    - Requests block locations from NameNode
    - Decides how many **map tasks** to create
 
+### The overall flow (data locality)
+   1. NameNode knows:
+      - “Block X is on Machine A”
+   2. ApplicationMaster requests:
+      - “Give me a container on Machine A”
+   3. ResourceManager allocates container on:
+      - Machine A
+   4. NodeManager on Machine A:
+      - Launches mapper JVM
+   5. Mapper reads data from:
+      - Local DataNode disk
+   6. Each mapper runs as a separate process in its own container for each InputSplit.
+
+No direct DataNode ↔ NodeManager dependency exists.
+   
+
 ---
 
 # STEP 3 — InputSplits and Map task creation (data locality)
