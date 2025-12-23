@@ -14,11 +14,20 @@
     <lastBuildDate>Tue, 23 Dec 2025 17:43:33 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Map Reduce</title>
+      <title>HDFS and MapReduce: Revolutionizing Big Data Processing</title>
       <link>http://localhost:1313/posts/big-data/map-reduce/</link>
       <pubDate>Tue, 23 Dec 2025 17:43:33 +0530</pubDate>
       <guid>http://localhost:1313/posts/big-data/map-reduce/</guid>
-      <description>&lt;p&gt;hello&lt;/p&gt;</description>
+      <description>&lt;p&gt;HDFS and MapReduce can be confusing at times. Let&amp;rsquo;s break down the entire process step-by-step with a concrete example.&lt;/p&gt;
+&lt;p&gt;The example I&amp;rsquo;m going to use is calculating the average movie rating per genre from a CSV file. First, we have to upload the CSV file into HDFS, and then we will run a MapReduce job to compute the average ratings.&lt;/p&gt;
+&lt;p&gt;We assume:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Data format:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;genre,rating&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Goal: &lt;strong&gt;average rating per genre&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Regular Expressions</title>

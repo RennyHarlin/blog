@@ -74,12 +74,29 @@ hdfs dfs -put genre_ratings.csv /movies/genre_ratings/
 
    - Written to **3 DataNodes** (replication factor = 3)
 
-5. NameNode stores metadata:
+5. Different views of the file:
+
+    - User view of HDFS:
+    ```
+    /movies/genre_ratings/genre_ratings.csv
+    ```
+
+    - NameNode view of file (Name Node metadata)
 
    ```
-   /movies/genre_ratings/genre_ratings.csv
-       → blockId_123
-       → DataNode2, DataNode5, DataNode9
+    ratings.csv
+        block_1 → DN2, DN4, DN7
+        block_2 → DN1, DN3, DN6
+   ```
+   - DataNode view of blocks
+
+   ```
+    DN2: blk_1
+    DN4: blk_1
+    DN7: blk_1
+    DN1: blk_2
+    DN3: blk_2
+    DN6: blk_2
    ```
 
 Data is now **distributed and fault-tolerant**.
@@ -117,7 +134,7 @@ hadoop jar hadoop-streaming.jar \
 
 ---
 
-# STEP 3 — InputSplits and Map task creation
+# STEP 3 — InputSplits and Map task creation (data locality)
 
 ### InputSplit creation
 
@@ -130,7 +147,9 @@ If file were TBs:
 - Thousands of blocks
 - Thousands of mappers
 
-One mapper is allotted to one block or InputSplit (128 MB).
+For every InputSplit, 
+- One mapper is created. 
+- YARN tries to schedule mappers on DataNodes where data resides (data locality). 
 
 ---
 
@@ -216,7 +235,7 @@ This **drastically reduces network traffic**.
 
 # STEP 6 — Shuffle and Sort phase
 
-This is the **heart of MapReduce**. This is the most expensive phase in the job, because it involves data transfer over the network.
+This is the **heart of MapReduce**. This is the most expensive phase in the job, because it involves **data transfer over the network**.
 
 ### What happens
 
