@@ -119,33 +119,32 @@ hadoop jar hadoop-streaming.jar \
 
 ---
 
-## What Hadoop does now
+### What Hadoop does now
 
-1. Job submitted to **YARN Resource Manager**
-2. Resource Manager:
+Job is submitted to YARN ResourceManager
+
+1. ResourceManager:
 
    - Allocates containers
-   - Launches Application Master
 
-3. Application Master:
+   - Launches an ApplicationMaster
 
-   - Requests block locations from NameNode
-   - Decides how many **map tasks** to create
+2. ApplicationMaster:
 
-### The overall flow (data locality)
-   1. NameNode knows:
-      - “Block X is on Machine A”
-   2. ApplicationMaster requests:
-      - “Give me a container on Machine A”
-   3. ResourceManager allocates container on:
-      - Machine A
-   4. NodeManager on Machine A:
-      - Launches mapper JVM
-   5. Mapper reads data from:
-      - Local DataNode disk
-   6. Each mapper runs as a separate process in its own container for each InputSplit.
+   - Requests block locations from the NameNode
 
-No direct DataNode ↔ NodeManager dependency exists.
+   - Determines number of map tasks
+
+### Data Locality Optimization
+
+- NameNode knows where blocks reside
+- ApplicationMaster requests containers on the same nodes
+- Mapper reads data locally from the DataNode disk
+
+Each mapper runs:
+- In its own YARN container
+- As a separate JVM process
+- One mapper per InputSplit
    
 
 ---
@@ -155,8 +154,7 @@ No direct DataNode ↔ NodeManager dependency exists.
 ### InputSplit creation
 
 - File size < 128 MB
-- **1 InputSplit**
-- **1 Mapper**
+- **1 block → 1 InputSplit → 1 mapper**
 
 If file were TBs:
 
