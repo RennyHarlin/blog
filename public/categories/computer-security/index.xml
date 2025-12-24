@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Computer Security on Renny Harlin</title>
-    <link>http://localhost:1313/categories/computer-security/</link>
+    <link>https://rennyharlin.github.io/categories/computer-security/</link>
     <description>Recent content in Computer Security on Renny Harlin</description>
     <image>
       <title>Renny Harlin</title>
-      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://rennyharlin.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://rennyharlin.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
     <lastBuildDate>Mon, 01 Dec 2025 18:23:22 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/computer-security/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://rennyharlin.github.io/categories/computer-security/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Computer Security: Data Encryption Standard (DES)</title>
-      <link>http://localhost:1313/posts/computer-security/des/</link>
+      <link>https://rennyharlin.github.io/posts/computer-security/des/</link>
       <pubDate>Mon, 01 Dec 2025 18:23:22 +0530</pubDate>
-      <guid>http://localhost:1313/posts/computer-security/des/</guid>
+      <guid>https://rennyharlin.github.io/posts/computer-security/des/</guid>
       <description>&lt;p&gt;DES is a symmetric-key block cipher that follows the Fiestal Cipher structure.&lt;/p&gt;
 &lt;h3 id=&#34;the-steps-involved-in-encryption-are&#34;&gt;The steps involved in encryption are:&lt;/h3&gt;
 &lt;ol&gt;
