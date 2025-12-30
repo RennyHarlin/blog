@@ -26,12 +26,10 @@
 &lt;li&gt;Compute F(\(R_0\), \(k_0\)) using expansion, XOR, S-boxes, and permutation&lt;/li&gt;
 &lt;li&gt;Set \(L_1\) = \(R_0\) and \(R_1\) = \(L_0\) XOR F(\(R_0\), \(k_0\))&lt;/li&gt;
 &lt;li&gt;Now, this concludes the first round. Now, do steps 3-4 15 more times&lt;/li&gt;
-&lt;li&gt;After round 16, Merge \(L_{16}\) (32 bits) and \(R_{16}\) (32 bits)&lt;/li&gt;
+&lt;li&gt;After round 16, perform a 32-bit swap like in Fiestal Cipher structure&lt;/li&gt;
 &lt;li&gt;Undo the initial permutation to get the cipher text&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;now-lets-look-at-some-of-the-non-intuitive-steps-in-detail&#34;&gt;Now, let&amp;rsquo;s look at some of the non-intuitive steps in detail:&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Initial Permutation&lt;/strong&gt; &lt;br&gt;
-This step involves transposition of the 64-bit input block based on a IP matrix. The \(IP^{-1}\) matrix is the reverse of the IP matrix which will be used in the last step will undo this transposition. This permutation plays no role in the cryptography aspect of the cipher. This step was introduced because of hardware considerations which were a major bottleneck during the 20th century.&lt;/p&gt;</description>
+&lt;p&gt;&lt;img alt=&#34;des-encryption-workflow&#34; loading=&#34;lazy&#34; src=&#34;https://rennyharlin.github.io/imgs/des/des.png&#34;&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
