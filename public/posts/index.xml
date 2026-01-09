@@ -1,24 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on Renny Harlin</title><link>https://rennyharlin.github.io/posts/</link><description>Recent content in Posts on Renny Harlin</description><image><title>Renny Harlin</title><url>https://rennyharlin.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url><link>https://rennyharlin.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link></image><generator>Hugo -- 0.152.2</generator><language>en</language><lastBuildDate>Wed, 31 Dec 2025 10:13:54 +0530</lastBuildDate><atom:link href="https://rennyharlin.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>RSA, the algorithm that rules the world</title><link>https://rennyharlin.github.io/posts/computer-security/rsa/</link><pubDate>Wed, 31 Dec 2025 10:13:54 +0530</pubDate><guid>https://rennyharlin.github.io/posts/computer-security/rsa/</guid><description>&lt;h2 id="some-math"&gt;Some math,&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Euler&amp;rsquo;s Totient Function
-&lt;ul&gt;
-&lt;li&gt;For any integer \(n &gt; 1\), the Euler&amp;rsquo;s Totient function \(\phi(n)\) is defined as the number of integers from 1 to \(n\) that are coprime to \(n\).
-For example, let&amp;rsquo;s do it for \(n = 18\):
-$$n = 18$$
-$$18 = 2 * 3^2 $$
-$$\phi(18) = 18 _ (1 - {1 \over 2}) _ (1 - {1 \over 3}) = 6$$&lt;/li&gt;
-&lt;li&gt;If \(n\) is a product of two distinct prime numbers \(p\) and \(q\), then,
-$$ \phi(n) = (p-1)(q-1) $$&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Euler&amp;rsquo;s Theorem
-&lt;ul&gt;
-&lt;li&gt;For any integer \(n &gt; 1\) and an integer \(a\) such that gcd(a, n) = 1,
-$$ a^{\phi(n)} \equiv 1 \ (mod \ n) $$&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="now-lets-dive-into-rsa"&gt;Now, let&amp;rsquo;s dive into RSA.&lt;/h2&gt;</description></item><item><title>HDFS and MapReduce: Revolutionizing Big Data Processing</title><link>https://rennyharlin.github.io/posts/big-data/map-reduce/</link><pubDate>Tue, 23 Dec 2025 17:43:33 +0530</pubDate><guid>https://rennyharlin.github.io/posts/big-data/map-reduce/</guid><description>&lt;p&gt;HDFS and MapReduce can be confusing at times. Let&amp;rsquo;s break down the entire process step-by-step with a concrete example.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on Renny Harlin</title><link>https://rennyharlin.github.io/posts/</link><description>Recent content in Posts on Renny Harlin</description><image><title>Renny Harlin</title><url>https://rennyharlin.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url><link>https://rennyharlin.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link></image><generator>Hugo -- 0.152.2</generator><language>en</language><lastBuildDate>Tue, 23 Dec 2025 17:43:33 +0530</lastBuildDate><atom:link href="https://rennyharlin.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>HDFS and MapReduce: Revolutionizing Big Data Processing</title><link>https://rennyharlin.github.io/posts/big-data/map-reduce/</link><pubDate>Tue, 23 Dec 2025 17:43:33 +0530</pubDate><guid>https://rennyharlin.github.io/posts/big-data/map-reduce/</guid><description>&lt;p&gt;HDFS and MapReduce can be confusing at times. Let&amp;rsquo;s break down the entire process step-by-step with a concrete example.&lt;/p&gt;
 &lt;p&gt;The example I&amp;rsquo;m going to use is calculating the average movie rating per genre from a CSV file. First, we have to upload the CSV file into HDFS, and then we will run a MapReduce job to compute the average ratings.&lt;/p&gt;
 &lt;p&gt;We assume:&lt;/p&gt;
 &lt;ul&gt;
