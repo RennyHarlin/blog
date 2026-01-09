@@ -133,3 +133,9 @@ markup:
 
 
 googleAnalytics: G-Y8J11SHRX5
+
+sitemap:
+  changeFreq: ''
+  disable: false
+  filename: sitemap.xml
+  priority: -1
