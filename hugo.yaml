@@ -8,8 +8,7 @@ buildFuture: false
 buildExpired: false
 
 minify:
-  disableXML: false
-  minifyOutput: true
+  disableHTML: true
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
