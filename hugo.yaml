@@ -70,7 +70,7 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "Hi there, I'm Renny Harlin"
-    Content: Welcome to my secret space. I write about Artific
+    Content: "Welcome to my corner of the internet. I write about Artificial Intelligence, Computer Science, and Robotics. Occasionally I also philosophize about my life."
 
   socialIcons:
     - name: linkedin
