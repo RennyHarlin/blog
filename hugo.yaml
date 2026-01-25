@@ -48,7 +48,7 @@ params:
     safari_pinned_tab: "<link / abs url>"
 
   label:
-    text: "Renny Harlin"
+    text: "Home"
     icon:
     iconHeight: 35
 
@@ -92,7 +92,7 @@ params:
     hiddenInSingle: true # hide on single page
 
   editPost:
-    URL: "https://github.com/RennyHarlin/RennyHarlin.github.io/blob/main/content" # base edit URL
+    URL: "https://github.com/RennyHarlin/blog/blob/main/content" # base edit URL
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 
