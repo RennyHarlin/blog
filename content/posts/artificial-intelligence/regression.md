@@ -111,7 +111,7 @@ Eqns 3 and 4 give us closed form solution of linear regression.
 Interestingly, if we have a look at equation 3 carefully, it can be broken down in to:
 $$
 \boxed{
-    m = \frac{Cov(X, Y)}{Var(x)}
+    m = \frac{Cov(X, Y)}{Var(X)}
 }
 $$
 
@@ -156,11 +156,42 @@ We started with the claim that the optimal solution for the weights and bias in 
 
 That's the beauty of linear regression, it connects linear algebra, statistics and optimization in to one nicely packed algorithm, and that's why today this exact algorithm is the pillar of modern machine learning and deep learning.
 
+## Regularization
+Regularization is an extension to linear regression to overcome the problem of overfitting and feature selection. There are three main types of regularizations:
+1. LASSO(L1) regularization
+2. Ridge(L2) regularization
+3. Elastic Net(L1+L2) regularization
 
 
+### LASSO(L1) Regularization
+This is the technique used for feature selection.
+$$
+\hat{e} = \frac{1}{2n}\sum_{i=1}^n(y_i - \hat{y}_i)^2 + \lambda\sum_{i=1}^m|m_i|
+$$
+Here, we're trying force some weights/slopes to zero.
+$$
+y = b + m_1x_1 + m_2x_2 + m_3x_3 + ... + m_nx_n
+$$
+So, essentially if a particular weight/slope is zero, indirectly we are cutting of that feature from being used during inference. 
 
+There will be problem here when trying to minimize the error, because of the absolute value term. Because, it's derivative is undefined at 0. There are several clever ways to handle that problem. One such method is using Alternating Direction Method of Multipliers (ADMM). For more information on how this algorithm works, refer this work by Stephen Boyd, who is the father of this algorithm. https://stanford.edu/~boyd/papers/pdf/admm_distr_stats.pdf
 
+### Ridge(L2) Regularization
+This is the technique used for overfitting.
+$$
+\hat{e} = \frac{1}{2n}\sum_{i=1}^n(y_i - \hat{y}_i)^2 + \lambda\sum_{i=1}^mm_i^2 
+$$
 
+Here, we are discouraging large weight coefficients by considering the square of the weights/slopes. This controls overfitting (i.e. it prevents the model from learning the training data too well that is including the noise).
+
+### Elastic Net(L1+L2) Regularization
+This combines both LASSO and Ridge regression, which reduces both overfitting and feature selection.
+
+$$
+\hat{e} = \frac{1}{2n}\sum_{i=1}^n(y_i - \hat{y}_i)^2 + \lambda_1\sum_{i=1}^m|m_i| + \lambda_2\sum_{i=1}^mm_i^2 
+$$
+
+This technique gives the power of both techniques in to one nice formulation.
 
 
 
