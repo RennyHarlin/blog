@@ -168,7 +168,7 @@ This is the technique used for feature selection.
 $$
 \hat{e} = \frac{1}{2n}\sum_{i=1}^n(y_i - \hat{y}_i)^2 + \lambda\sum_{i=1}^m|m_i|
 $$
-Here, we're trying force some weights/slopes to zero.
+Here, we're trying to force some weights/slopes to zero.
 $$
 y = b + m_1x_1 + m_2x_2 + m_3x_3 + ... + m_nx_n
 $$
