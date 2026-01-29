@@ -38,6 +38,8 @@ Steps involved with PCA:
 ## The intuition
 Having understood the process, now figuring out the intuition is kinda easy. Initially, we had a feature system where each feature may or may not be correlated with other features in the system. After PCA, you get a new feature system where each feature is independent of other features in the system (i.e. $Cov(x, y) = 0$). And, each feature points in the direction of maximum variance arranged by the decreasing order of eigen values of the covariance matrix.
 
+The new feature system is essentially some linear combination of the original feature system, in such a way that maximum variance is captured. The coefficient for this linear combination is given by the eigen vectors. Quite funny, that the same idea can be illustrated in multiple different perspectives :)
+
 In this new feature system, you can take only the top k features and still retain a majority of the information from the original feature system. Here, is where the dimensionality reduction power of PCA comes in to play. 
 
 Hope you got a good grip of the intuition behind PCA, HAPPY LEARNING !
