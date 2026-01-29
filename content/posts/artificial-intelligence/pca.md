@@ -2,6 +2,7 @@
 date: '2026-01-29T08:55:16+05:30'
 draft: false
 title: 'Principal Component Analysis (PCA)'
+math: true
 ---
 
 Let's imagine you have a dataset consisting of 10 features. As a data scientist, your first job with any dataset is exploratory data analysis.
