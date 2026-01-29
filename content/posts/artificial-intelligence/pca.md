@@ -1,6 +1,6 @@
 ---
 date: '2026-01-29T08:55:16+05:30'
-draft: true
+draft: false
 title: 'Principal Component Analysis (PCA)'
 ---
 
