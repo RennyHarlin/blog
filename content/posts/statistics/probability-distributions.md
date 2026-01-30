@@ -35,7 +35,7 @@ A random variable is not random, but an experiment is.
   $$
 - Cumulative mass function (CMF)
   $$
-  F_X(x) = P(X \leq x) = \sum_{i=-\infin}^xp(x)
+  F_X(x) = P(X \leq x) = \sum_{i=-\infty}^xp(x)
   $$
   - It kinda helps to find probabilites between ranges easily, which would be rather difficult with just PMF
   $$
@@ -80,7 +80,7 @@ Statisticians are going to hate me for saying this but, \
 -  Cumulative density function
    -  A cumulative density function is similar to CMF
   $$
-  F_X(x) = P(X \leq x) = \int_{-\infin}^xf_X(x)
+  F_X(x) = P(X \leq x) = \int_{-\infty}^xf_X(x)
   $$
 - PDF and CDF are actually related
   $$
@@ -88,7 +88,7 @@ Statisticians are going to hate me for saying this but, \
   $$
 - Expectation
   $$
-    E[X] = \int_{-\infin}^{\infin} xP_X(x)
+    E[X] = \int_{-\infty}^{\infty} xP_X(x)
   $$
 - Variance
   $$
@@ -118,13 +118,13 @@ Statisticians are going to hate me for saying this but, \
    - $E[X] = np$
    - $Var[X] = np(1-p)$
 3. Poisson Distribution
-   - It's essentially binomial with infinite number of trials $(n\rightarrow\infin)$ and with the success probability $p$ close to zero
+   - It's essentially binomial with infinite number of trials $(n\rightarrow\infty)$ and with the success probability $p$ close to zero
    - Let's understand with an example, let's say you are a call operator and you get 2 calls per minute on an average.
    - Now, here we know something expected number of calls in a minute is 2 and let's denote it by $\lambda$
     - $E[X] = \lambda$, where $X$ denotes number of calls in minute
     - Now, I ask the rare case: *"What's the probability that you get 5 calls in a minute ?"*
     - This qn is rare because on an average we only get 2 calls per minute, so getting 5 is rare. This is the kind of qn Poisson answers
-    - Poisson's distribution models extremely rare ($p$ close to 0), it does this by resolving the minutes to seconds, microseconds, nanoseconds...till infinity ($n\rightarrow\infin$)
+    - Poisson's distribution models extremely rare ($p$ close to 0), it does this by resolving the minutes to seconds, microseconds, nanoseconds...till infinity ($n\rightarrow\infty$)
     - PMF
     $$
         P_X(k) = \frac{e^{-\lambda}\lambda^k}{k!}
