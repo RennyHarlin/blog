@@ -17,13 +17,13 @@ echo "Deploying public..."
 cd public
 git add .
 git commit -m "$MSG"
-git push
+git push --force
 
 # Update blog repo with new submodule reference
 echo "Updating blog repo..."
 cd ..
 git add .
 git commit -m "$MSG"
-git push
+git push --force
 
 echo "Done!"
