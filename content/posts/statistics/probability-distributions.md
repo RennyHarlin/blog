@@ -18,7 +18,9 @@ A random variable is not random, but an experiment is.
 
 ## Types of random variables
 1. Discrete random variable - Outcome of event is finite (e.g. Getting one of the faces of the die)
-2. Continuous random variable - Outcome of event is infinite (e.g. Choosing a real number between 0 and 1)
+  ![Discrete Probability Distribution](image.png)
+1. Continuous random variable - Outcome of event is infinite (e.g. Choosing a real number between 0 and 1)
+   ![Continuous Probability Distribution](image-1.png)
 
 ## Discrete random variable
 - Probability mass function (PMF)
@@ -96,7 +98,8 @@ Statisticians are going to hate me for saying this but, \
   $$
 
 
-## Discrete Distributions
+## Discrete Probability Distributions
+The probability distributions that follow the discrete random variables are called discrete probability distributions.
 1. Bernoulli Distribution
    - It's a simple success or failure experiment
    - PMF
@@ -109,7 +112,7 @@ Statisticians are going to hate me for saying this but, \
     - Here, 1 means *success*, 0 means *failure*, and *p* is the success probability
    - $E[X] = p$
    - $Var[X] = p(1-p)$
-2. Binomial Distribution
+2. Binomial Distribution 
    - You perform bernoulli trial n times, so you have k successes and n-k failures
    - PMF
     $$
@@ -117,6 +120,12 @@ Statisticians are going to hate me for saying this but, \
     $$
    - $E[X] = np$
    - $Var[X] = np(1-p)$
+   > A bag contains 5 white balls and 10 black balls. In a random experiment, n balls are drawn from the bag one at a time with replacement. Let Sn denote the total number of black balls drawn in the experiment. The expectation of $S_{100}$ denoted by E[$S_{100}$] = ___ \
+   *Solution* \
+   The above problem follows the binomial distribution. \
+   The number of trials $n = 100$ \
+   Success probability $p = \frac{10}{15} = \frac{2}{3}$ \
+   So, now we know from the above formulas that $E[S_{100}] = np = 100 \times \frac{2}{3} = 66.67$
 3. Poisson Distribution
    - It's essentially binomial with infinite number of trials $(n\rightarrow\infty)$ and with the success probability $p$ close to zero
    - Let's understand with an example, let's say you are a call operator and you get 2 calls per minute on an average.
@@ -134,6 +143,8 @@ Statisticians are going to hate me for saying this but, \
     $$
     E[X] = Var[X] = \lambda
     $$
+    ![Poisson's Distribution](image-2.png)
+    - In the above graph, you can clearly see the probability of the average phone calls being made is maximum, as we move away from the average, our probability closely moves towards zero.
 4. Discrete Uniform Distribution
    - All outcomes are equally likely, like getting a face on rolling a die
    - Each face has probability $\frac{1}{6}$
@@ -143,6 +154,7 @@ Statisticians are going to hate me for saying this but, \
     $$
 
 ## Continuous Distributions
+The probability distributions that follow the continuous random variable are called continuous probability distributions.
 1. Continuous Uniform Distribution (a, b)
    - All outcomes with in an interval $[a, b]$ are equally likely
    - $X$ can be any real number within this interval $[a, b]$
@@ -180,7 +192,7 @@ Statisticians are going to hate me for saying this but, \
     - Symmetric bell curve
     - PDF
     $$
-    f_X(x) = \frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x-\mu^2)}{2\sigma^2}}
+    f_X(x) = \frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}
     $$
     - Expectation
     $$
