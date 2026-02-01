@@ -2,6 +2,8 @@
 date: "2025-12-23T17:43:33+05:30"
 draft: false
 title: "HDFS and MapReduce: Revolutionizing Big Data Processing"
+categories: ["Big Data"]
+tags: ["hdfs", "map-reduce", "hadoop"]
 ---
 
 HDFS and MapReduce can be confusing at times. Let's break down the entire process step-by-step with a concrete example.

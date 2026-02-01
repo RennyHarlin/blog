@@ -3,7 +3,8 @@ date: '2026-01-25T17:47:48+05:30'
 draft: false
 title: 'Linear Regression'
 math: true
-category: ['Machine Learning']
+categories: ["Artificial Intelligence"]
+tags: ["machine-learning", "regression", "linear-regression"]
 ---
 
 This is one of machine learning's lightly interpreted algorithms out there. Often always taught using abstractions that kills the beauty of this interesting algorithm. 

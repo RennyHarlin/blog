@@ -2,6 +2,8 @@
 date: "2025-12-05T10:38:28+05:30"
 draft: false
 title: "Regular Expressions"
+categories: ["Computer Science"]
+tags: ["regex", "parsing", "text-processing"]
 params:
   math: true
 ---

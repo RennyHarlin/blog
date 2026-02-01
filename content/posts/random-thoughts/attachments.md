@@ -2,7 +2,8 @@
 date: '2026-01-19T19:47:17+05:30'
 draft: false
 title: 'Attachments in Life'
-
+categories: ["Random Thoughts"]
+tags: ["attachments", "life", "reflection"]
 ---
 
 The one thing I struggle with the most in my life is attachments. There are several types of attachments:

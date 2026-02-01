@@ -3,6 +3,7 @@ date: "2025-12-01T18:23:22+05:30"
 draft: false
 title: "Computer Security: Data Encryption Standard (DES)"
 categories: ["Computer Security"]
+tags: ["des", "cryptography", "symmetric-key"]
 params:
   math: true
 ---

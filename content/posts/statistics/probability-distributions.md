@@ -1,8 +1,11 @@
 ---
 date: '2026-01-30T08:44:38+05:30'
 draft: false
+showToc: true
 title: 'Probability Distributions'
 math: true
+categories: ["Statistics"]
+tags: ["probability", "random-variables", "distributions"]
 ---
 
 This is a concept that you study once, and expect to remember it for life. But fate has it, you really cannot. I've been out in this cycle for over 2 years.
@@ -211,4 +214,4 @@ The probability distributions that follow the continuous random variable are cal
     - Variance = 1
 
 
-### In the works, but will be completed soon :) HAPPY LEARNING !
+In the works, but will be completed soon :) HAPPY LEARNING !

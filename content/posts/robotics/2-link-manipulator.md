@@ -3,6 +3,7 @@ date: '2025-12-02T10:58:35+05:30'
 draft: false
 title: 'Forward and inverse kinematics of a 2-link manipulator'
 categories: ['Robotics']
+tags: ["kinematics", "manipulator", "robotics"]
 params:
     math: true
 ---

@@ -11,6 +11,16 @@ minify:
   disableXML: false
   minifyOutput: true
 
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+taxonomies:
+  category: categories
+  tag: tags
+
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Renny Harlin
@@ -114,6 +124,18 @@ menu:
       name: Categories
       url: /categories/
       weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
+    - identifier: archives
+      name: Archives
+      url: /archives/
+      weight: 30
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 40
 
 markup:
   goldmark:
@@ -131,5 +153,3 @@ markup:
         enable: true
 
 googleAnalytics: G-Y8J11SHRX5
-
-

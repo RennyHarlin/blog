@@ -3,6 +3,8 @@ date: "2025-12-31T10:13:54+05:30"
 draft: true
 title: "RSA, the algorithm that rules the world"
 math: true
+categories: ["Computer Security"]
+tags: ["rsa", "cryptography", "public-key"]
 ---
 
 ## Some math,
