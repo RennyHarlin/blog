@@ -18,9 +18,9 @@ A random variable is not random, but an experiment is.
 
 ## Types of random variables
 1. Discrete random variable - Outcome of event is finite (e.g. Getting one of the faces of the die)
-  ![Discrete Probability Distribution](image.png)
+  ![Discrete Probability Distribution](/imgs/statistics/image.png)
 1. Continuous random variable - Outcome of event is infinite (e.g. Choosing a real number between 0 and 1)
-   ![Continuous Probability Distribution](image-1.png)
+   ![Continuous Probability Distribution](/imgs/statistics/image-1.png)
 
 ## Discrete random variable
 - Probability mass function (PMF)
@@ -143,7 +143,7 @@ The probability distributions that follow the discrete random variables are call
     $$
     E[X] = Var[X] = \lambda
     $$
-    ![Poisson's Distribution](image-2.png)
+    ![Poisson's Distribution](/imgs/statistics/image-2.png)
     - In the above graph, you can clearly see the probability of the average phone calls being made is maximum, as we move away from the average, our probability closely moves towards zero.
 4. Discrete Uniform Distribution
    - All outcomes are equally likely, like getting a face on rolling a die

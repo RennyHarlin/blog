@@ -1,6 +1,6 @@
-baseURL: "https://rennyharlin.github.io/"
 title: Renny Harlin
 theme: PaperMod
+baseURL: "https://rennyharlin.github.io/"
 
 enableRobotsTXT: true
 buildDrafts: false
