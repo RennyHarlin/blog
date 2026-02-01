@@ -10,7 +10,7 @@ This is a concept that you study once, and expect to remember it for life. But f
 So, now finally I'm nailing this concept down in my blog.
 
 ## What is a random variable ?
-A random variable is not random :)
+First of all, nothing about a random variable is random :)
 
 It's essentially a variable used to represent an outcome of an random experiment (e.g. Get a 1 after rolling a die, here 1 is a random variable).
 
