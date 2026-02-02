@@ -6,6 +6,11 @@ title: 'Probability Distributions'
 math: true
 categories: ["Statistics"]
 tags: ["probability", "random-variables", "distributions"]
+series: ["Math for Machine Learning"]
+---
+
+*This article is part of a series on [Math for Machine Learning](/series/math-for-machine-learning/), follow along to learn more about some of the math involved with ML*
+
 ---
 
 This is a concept that you study once, and expect to remember it for life. But fate has it, you really cannot. I've been out in this cycle for over 2 years.

@@ -5,6 +5,11 @@ title: 'Linear Regression'
 math: true
 categories: ["Artificial Intelligence"]
 tags: ["machine-learning", "regression", "linear-regression"]
+series: ["Introduction to Machine Learning"]
+---
+
+*This article is part of a series on [Introduction to Machine Learning](/series/introduction-to-machine-learning/), follow along to learn more about different machine learning algorithms intuitively*
+
 ---
 
 This is one of machine learning's lightly interpreted algorithms out there. Often always taught using abstractions that kills the beauty of this interesting algorithm. 

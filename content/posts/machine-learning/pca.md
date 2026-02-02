@@ -5,6 +5,11 @@ title: 'Principal Component Analysis (PCA)'
 math: true
 categories: ["Artificial Intelligence"]
 tags: ["pca", "dimensionality-reduction", "machine-learning"]
+series: ["Introduction to Machine Learning"]
+---
+
+*This article is part of a series on [Introduction to Machine Learning](/series/introduction-to-machine-learning/), follow along to learn more about different machine learning algorithms intuitively*
+
 ---
 
 Let's imagine you have a dataset consisting of 10 features. As a data scientist, your first job with any dataset is exploratory data analysis.
