@@ -1,6 +1,6 @@
 ---
 date: '2026-01-19T19:47:17+05:30'
-draft: false
+draft: true
 title: 'Attachments in Life'
 categories: ["Random Thoughts"]
 tags: ["attachments", "life", "reflection"]
