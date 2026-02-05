@@ -156,7 +156,7 @@ $$
 }
 $$
 
-If you have studied linear algebra, you will immediately realize that $(A^TA)^{-1}A^T$ is the pseudo inverse of $A$, and the $\hat{y}$ is the projection of $y$ onto the column space of $A$.
+If you have studied linear algebra, you will immediately realize that $(A^TA)^{-1}A^T$ is the pseudo inverse of $A$, and the $\hat{y}$ is the projection of $y$ onto the column space of $A$. I have an [article](/posts/ml-math/axb/) written on this idea, I encourage you to read that. 
 
 We started with the claim that the optimal solution for the weights and bias in linear regression are those that minimize the squared error. But, the solution also helped us deduce a conclusion that $\hat{y}$ always lies in the column space of the input or feature matrix. 
 
